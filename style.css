@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(61, 61, 61);
+}
+
+.clock {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-color: aqua;
+  background-image: url(./asset/Black-Empty-Clock-Isolated-On-White-For-Pattern-And-Design-Stock-Illustration-Download-Image-Now-iStock-06-01-2025_09_34_PM.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 105% 105%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.clock::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.h {
+  height: 180px;
+
+  /* background-color: brown; */
+  position: relative;
+  justify-content: center;
+  display: flex;
+  transform: rotate(30deg);
+}
+
+.h::after {
+  content: "";
+  height: 110px;
+  width: 5px;
+  background-color: rgb(12, 111, 42);
+  position: absolute;
+}
+.m {
+  height: 230px;
+
+  /* background-color: brown; */
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
+
+.m::after {
+  content: "";
+  height: 134px;
+  width: 5px;
+  background-color: #ff0606;
+  position: absolute;
+}
+.s {
+  height: 290px;
+
+  /* background-color: brown; */
+  position: relative;
+  justify-content: center;
+  display: flex;
+  transform: rotate(60deg);
+}
+
+.s::after {
+  content: "";
+  height: 165px;
+  width: 5px;
+  background-color: #ac06ff;
+  position: absolute;
+}
